@@ -25,7 +25,7 @@ SECRET_KEY = ')a+4oiqh637&-lqm_9j_5oc00vkdy!zpr%4$54&we@=7jc35ic'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djreger.herokuapp.com']
 
 
 # Application definition
