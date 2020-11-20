@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Login Here{% endblock title %}
+{% block body %}
+<div class="main">
+
+        <section class="signup">
+        <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" action="/login" id="signup-form" class="signup-form">
+                    {% csrf_token %}
+                        <h2 class="form-title">Login Here</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="loginusername" id="loginusername" placeholder="Username"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="loginpass" id="loginpass" placeholder="Password"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-submit" value="Login"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Not have a account ? <a href="/" class="loginhere-link">Signup here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+{% endblock body %}
